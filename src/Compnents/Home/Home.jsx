@@ -21,7 +21,7 @@ const Home = () => {
      }
     };
     return (
-        <div className='main-container'>
+        <div className='main-container' style={{transitionDelay:"3s"}}>
         <ToastContainer />
             <motion.div 
             variants={headerVariants}

@@ -19,14 +19,16 @@ export default function App() {
 function Root() {
 
   return (
-    <Routes>
+    <div style={{overflowX:"hidden", msTransitionDelay:"3s"}}>
+      <Routes>
 
-     <Route path="/" element={<Home />} />
-     <Route path="/login"  element={<Login />} />
-     <Route path="/cart"  element={<Cart />} />
-     <Route path="/signup"  element={<Signup />} />
+<Route path="/" element={<Home />} />
+<Route path="/login"  element={<Login />} />
+<Route path="/cart"  element={<Cart />} />
+<Route path="/signup"  element={<Signup />} />
 
-     </Routes>
+</Routes>
+    </div>
     
   )
 }

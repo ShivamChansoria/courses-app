@@ -47,7 +47,9 @@ const Signup = () => {
       <div className="login-container">
         <h2>USER SIGNING UP...</h2>
         <div className="login-form">
+        <div style={{height:"150px"}}></div>
           <form>
+          <button  onClick={()=>{navigate('/')}}>back</button>
             <h3>SIGN UP</h3>
             <input
               type="text"
