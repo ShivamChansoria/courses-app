@@ -1,0 +1,10 @@
+.product-container--advise---cart{
+    height: 230px;
+}
+
+@media (max-width:900px) {
+    .product-container--advise{
+       width: 300px !important;
+       height: fit-content;
+    }
+}

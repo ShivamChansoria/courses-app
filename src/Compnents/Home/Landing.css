@@ -1,0 +1,416 @@
+.tagline{
+    height: 287px;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    margin-left: 11%;
+    /* overflow: hidden; */
+    
+}
+
+.tagline h1{
+    font-size: 175px;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px #9b9b9b;
+    padding-left: 10vw;
+}
+
+.tagline h3{
+    color: #000063;
+    font-size: 100px;
+    text-shadow: 3px 3px 5px #9b9b9b;
+    padding-left: 100px; 
+    padding-top: 25px;
+}
+
+.mid-sec{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info{
+    /* position: absolute;
+    left: 260px; */
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    color: #595858;
+    width: 30vw;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-left: 5vw;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 7vw
+}
+
+.form-container > input{
+    height: 30px; 
+    margin: 25px 0 0 40px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+   
+}
+
+.form-container > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.form-container > input::placeholder{
+    color: rgb(220, 220, 220);
+}
+
+.submit-btn{
+    margin-top: 25px;
+    height: 55px;
+    width: 150px;
+    font-weight: 300;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #C4C4C4,black );
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#name{
+  margin-top: 50px;
+  width: 350px;
+  color: white;
+  background-image: linear-gradient(to right, #7c7eb3, #151B9C, #5a549c );
+  border: none;
+}
+
+#contact{
+    width: 250px;
+    background-image: linear-gradient(to right, #7c7eb3, #151B9C, #5a549c );
+    border: none;
+
+}
+
+.line-1{
+    height: 200px;
+    width: 20px;
+    background-image: linear-gradient(to top, #7c7eb3, #151B9C 50%);
+    margin-left: 80px;
+    margin-top: 60px;
+    box-shadow: 8px 4px 10px grey;
+}
+
+.line-2{
+    height: 22px;
+    width: 60vw;
+    background-image: linear-gradient(to right, #7c7eb3, #151B9C 25% );
+    margin-left: 80px;
+    margin-top: 60px;
+    box-shadow: 8px 4px 10px grey;
+    position: absolute;
+    top: 590px;
+    left: 20vw;
+}
+
+.our-products--sec{
+  display: flex;
+  flex-direction: column;
+}
+
+.our-products--sec> h3{
+    margin-left: 10vw;
+    font-size: 30px;
+}
+
+.on-sale--sec{
+    display: flex;
+    flex-direction: column;
+    max-width: 96vw;
+    overflow: hidden;
+  }
+  
+.our-products--sec> .product-listing{
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+}
+
+  .on-sale--sec> h3{
+      margin-left: 10vw;
+      font-size: 30px;
+  }
+  
+  .on-sale--sec> .product-listing--sale{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+  }
+
+  .experts-advice{
+    background-image: linear-gradient(to right , #D6D6D6, #717070 );
+    margin: 50px 20px;
+
+  }
+
+  .product-listing--expert{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+  }
+
+  .product-listing--expert::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-listing--expert>h3{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+.footer{
+    background-image: linear-gradient(to right top, #000000, #232121 50% 45%, #000000 );
+     height: 800px;
+     margin: 0;
+     color: #FFFFFF;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+.footer> .uppersection{
+        display: flex;
+        margin: 40px 70px;
+        justify-content: space-around;
+        height: 540px;
+}
+
+.footer h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.course, .questions, .about, .contact{
+    display: flex;
+    flex-direction: column;
+    width: 12vw;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.footer-line{
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.footer> .lowersection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.lowersection> .first >span{
+    margin-right: 10vw;
+}
+
+.lowersection> .second{
+    display: flex;
+    align-items: center;
+}
+
+.lowersection> .second> svg{
+      margin-left: 10px;
+      
+}
+
+.hero-container{
+    /* background-color: #03031c; */
+    height: 200px;
+    width: 25vw;
+    /* position: absolute; */
+    filter: blur(9px);
+    border-radius: 46%;
+    display: flex;
+}
+
+.hero1{
+    height: 66px;
+    width: 9vw;
+    background-color: #03031c;
+    /* position: relative; */
+    left: 20px;
+    animation: anime2 7s linear infinite alternate;
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+
+
+
+@keyframes anime2{
+    from{
+        transform: skew(50deg, 40deg) ;
+    }
+    to{
+        transform: skew(150deg, 85deg) ; 
+    }
+}
+
+
+@media (max-width: 1130px) {
+    .tagline h3{
+        left: 250px;
+        top: 250px;
+        position: absolute;
+        font-size: 60px;
+    } 
+    .mid-sec{
+        flex-direction: column;
+        height: 900px;
+        justify-content: flex-start;
+        margin-top: 80px;
+        height: 480px;
+    }
+    .line-2{
+        top: 760px;
+        left: 100px;
+    }
+    .form-container{
+        position: absolute;
+        left: 40vw;
+        margin-top: 50px;
+    }
+    .info{
+        position: absolute;
+        left: 135px;
+        overflow: visible;
+        height: fit-content;
+    }
+
+    .our-products--sec{
+    }
+    .on-sale--sec{
+        overflow: visible;
+    }
+}
+
+@media (max-width:1000){
+    .line-2{
+        top: 1080;
+    }
+}
+
+@media (max-width:900px) {
+     .tagline{
+        margin-left: 0;
+        flex-direction: column;
+        margin-bottom: 0;
+     }
+
+     .tagline h1{
+        font-size: 130px;
+     }
+
+    .tagline h3{
+        font-size: 42px;
+        top: 265px;
+        left:190px;
+        position: static;
+    }
+   
+      .line-1{
+        margin-left: 40px;
+        margin-top:-10px
+      }
+
+    .line-2{
+        top: 860px;
+        left: 60px;
+    }
+     
+   .mid-sec{
+    margin-top: 0;
+   }
+
+    .info{
+        width: 70%;
+        margin-bottom: 20px;
+        left: 75px;
+        margin-top: 0;
+    }
+
+    .form-container{
+        position: relative;
+        top: 120px ;
+        left: -40px;
+        z-index: 100;
+    }
+
+    .our-products--sec{
+        margin-left: 0;
+    }
+
+    .product-listing{
+        flex-direction: column;
+    }
+
+    .on-sale--sec{
+        width: auto !important;
+        margin-left: 20px;
+    }
+
+    .product-listing--sale{
+         overflow-x: auto;
+         width: 90vw;
+         justify-content: normal!important;
+    }
+    .product-listing--sale::-webkit-scrollbar { /* For removing the scrollbar */
+        display: none;
+    }
+
+
+    .uppersection{
+        flex-direction: column;
+        justify-content: space-between!important;
+        height: 170vh;
+        align-items: center;
+    }
+
+    .course, .about, .contact, .questions{
+        margin:0 20px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .course, .contact{
+        :nth-child(even){
+            margin-left: 30px;
+        } :nth-child(odd){
+            margin-left: -30px;
+        }
+    }
+    
+    .lowersection{
+        padding: 0 20px;
+    }
+
+}

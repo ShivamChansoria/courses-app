@@ -1,0 +1,225 @@
+.header-container{
+    margin-top: 5px;
+    height: 50px;
+    width: 98vw;
+    box-shadow: 9px  8px 12px 3px rgba(161, 159, 159, 0.4) ;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.nav-btns{
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+    height: 10px;
+}
+
+.courses, .categories, .syllabus{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-btn{
+    display: flex;
+}
+
+.onHover1{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 46px;
+    left: 2vw;
+    width: 215px;
+    height: 180px;
+    box-shadow: 9px  8px 12px  rgba(161, 159, 159, 0.4) ;
+    backdrop-filter: blur(15px);
+
+}
+.onHover2{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 46px;
+    left: 15vw;
+    width: 215px;
+    height: 300px;
+    box-shadow: 9px  8px 12px  rgba(161, 159, 159, 0.4) ;
+    backdrop-filter: blur(15px);
+
+}
+.onHover3{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 46px;
+    left: 28vw;
+    width: 215px;
+    height: 180px;
+    box-shadow: 9px  8px 12px  rgba(161, 159, 159, 0.4) ;
+    backdrop-filter: blur(15px);
+
+}
+.onHover4{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 46px;
+    left: 68vw;
+    width: 350px;
+    height: 120px;
+    box-shadow: 9px  8px 12px  rgba(161, 159, 159, 0.4) ;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    font-size: 16px;
+}
+
+.onHover4> .login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+}
+
+.login-container>h3{
+    font-weight: 700;
+    text-shadow: 4px 4px 5px grey;
+    cursor: pointer;
+}
+
+.signup-hover{
+    width: 80%;
+    background-image: linear-gradient(to right, #161616, #858585 , #1D1D1D );
+    color: white;
+    padding: 0 5px;
+    border: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px grey;
+}
+
+
+.courses:hover .onHover1{
+    visibility: visible;
+}
+
+.syllabus:hover .onHover2{
+    visibility: visible;
+}
+
+.categories:hover .onHover3{
+    visibility: visible;
+}
+
+.login-btn:hover .onHover4{
+    visibility: visible;
+}
+
+
+.search-bar{
+    background-image: linear-gradient(to right, #e6dede, #BFBFBF , #e4dada );
+    min-width: 10vw;
+    height: 30px;
+    margin:0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar> input{
+    background: transparent;
+    border: none;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.search-bar> span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+.login-btn{
+    margin: 0 5vw;
+    margin-right: 13vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-btn{
+    margin-right: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count{
+    z-index: 5;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    margin-left: -18px;
+    margin-bottom: 27px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.courses-btn, .syllabus-btn, .categories-btn{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .header-container{
+        width: 95vw;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30vh;
+        align-items: center;
+    }
+    .logo-container{
+        display: none;
+    }
+
+    .login-btn{
+        height: 10px;
+    }
+    .cart-btn{
+        height: 45px;
+    }
+
+    .nav-btns{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30%;
+        align-items: center;
+    }
+} 

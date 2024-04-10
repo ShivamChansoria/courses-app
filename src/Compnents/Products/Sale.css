@@ -1,0 +1,82 @@
+.product-container--sale{
+    height: 440px;
+    width: 22vw;
+     background-image: linear-gradient(to right top, #D6D6D6, #F7F6F6, #DFDFDF );
+    border: none;
+    margin: 50px 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 2px 10px 20px 5px grey;
+
+}
+
+.product-info{
+
+}
+
+.product-info--sale> h3{
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.product-info--sale> p{
+    text-align: center;
+    font-size: 11px;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+}
+
+.pricing> strike{
+    font-size: 13px;
+}
+
+.pricing> h4{
+    margin-left:10px;
+}
+
+.btns--sale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+}
+
+.btns--sale> button{
+    height: 26px!important;
+    font-size: 9px;
+    width: 50%;
+    color: rgb(158, 156, 156);
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right top, #d0d0d0, #1f1f1f 30% 66%, #d0d0d0 );
+    border: none;
+    cursor: pointer;
+
+}
+
+
+@media (max-width:900px){
+    .product-container--sale{
+        height: 320px;
+        width: 50%;
+    }
+    svg{
+        height: 100px;
+    }
+
+    .product-info--sale> p{
+        height: 100px;
+        overflow: hidden;
+    }
+     
+   
+    button{
+        height: 22px;
+        font-size: 10px;
+    }
+}
