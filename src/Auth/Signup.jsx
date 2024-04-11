@@ -2,9 +2,10 @@ import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 import { Client, Account, ID } from "appwrite";
 import { appwrite_Endpoint_API, appwrite_Project_ID } from "./Appwrite";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLocation } from 'react-router-dom';
 
 const Signup = () => {
   const projectID = appwrite_Project_ID;
@@ -14,6 +15,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const navigate = useNavigate();
+  let location= useLocation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,10 +43,19 @@ const Signup = () => {
 
     // toast("Button Clicked");
   };
+   
+
+  const handleBack= (e)=>{
+    e.preventDefault();
+    navigate('/');
+};
 
   return (
     <div className="login-page">
       <div className="login-container">
+      <span onClick={handleBack} className="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 24 24"><path fill="black" d="M18.464 2.114a.998.998 0 0 0-1.033.063l-13 9a1.003 1.003 0 0 0 0 1.645l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-.536-.886M17 19.091L6.757 12L17 4.909z"></path></svg>
+                    </span>
         <h2>USER SIGNING UP...</h2>
         <div className="login-form">
           <form>

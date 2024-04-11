@@ -222,4 +222,19 @@ textarea:focus, input:focus{
         height: 30%;
         align-items: center;
     }
+
+    .onHover1{
+        left: 30%;
+    }
+    .onHover2{
+        left: 30%;
+        top: 100px
+    }
+    .onHover3{
+        left: 30%;
+        top: 130px
+    }
+    .onHover4{
+        left: 20%;
+    }
 } 
