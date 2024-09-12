@@ -61,7 +61,9 @@ const Login = () => {
                     </span>
                 <h2>USER LOGIN...</h2>
                 <div className="login-form" >
+                <div style={{height:"150px"}}></div>
                  <form>
+                 <button  onClick={()=>{navigate('/')}}>back</button>
                     <h3>LOGIN</h3>
                     <input type="text" onChange={e=> setEmail(e.target.value)} className="email-input" placeholder="Email" />
                     <input type="password"  onChange={e=> setPassword(e.target.value)} className="password-input" placeholder="Password" />

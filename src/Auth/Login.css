@@ -4,7 +4,9 @@
 }
 
 .login-page{
+    overflow-y: hidden;
     height: 100vh;
+    max-height: 100vh;
     width: 100vw;
     background-image: linear-gradient(to right top,black, #1F1F1F, #333333,#1F1F1F,black );
 }
